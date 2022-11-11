@@ -1,0 +1,36 @@
+OAuth account
+serverless account
+
+npm install -g serverless
+serverless --version
+
+//configure serverless profile with aws(iam) credentials
+//sls config credentials --provider aws --key AKIAQU7O3R2DWLDN54U6 --secret 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 --profile serverless
+*above command not necessary if iam credentials are already configuredS
+//login to dashboard  serverless login
+-npm install --save-dev serverless-iam-roles-per-function@next - removes node version complications with iam roles
+
+//deploy app
+sls deploy --verbose
+
+Create Ouath APP
+1:48
+//serverless app Allowed callback url
+http://localhost:3000/callback
+1:48
+//Allowed web origins
+http://localhost:3000
+1:48
+//extend epiration time
+42000
+//advanced settings - RS256
+
+
+*1:18
+*1:25 - backend deploy
+*1:45 - staging
+
+
+serveles.yml
+SIGNED_URL_EXPIRATION: 300
+    AUTH_0_SECRET_ID: Gxxg-Bxd8QoNVXNDtjbgS99r5Z83lc83oRr2V8bfwEK7caUE-4hgEwzKQJMNNd3g
